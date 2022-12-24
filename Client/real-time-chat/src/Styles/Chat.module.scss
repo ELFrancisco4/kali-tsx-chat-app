@@ -1,0 +1,41 @@
+@import './config/config';
+
+@keyframes animate-msg{
+    from {transition: 0;}
+    to {transition: 2s ease-in;}
+}
+
+.container{
+    height: 100vh;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .7em;
+    .chat{
+        background-color: $background;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 1em;
+        gap: 10px;
+        .compose{
+            display: flex;
+            input{
+                width: 100%;
+                outline: none;
+                padding: .3em;
+            }
+            svg{
+                cursor: pointer;
+            }
+        }
+    }
+    .message_interface{
+        width: 100%;
+        height: 100%;
+    }
+    
+}

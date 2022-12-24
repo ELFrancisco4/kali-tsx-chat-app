@@ -1,0 +1,28 @@
+@import '../../../Styles/config/config';
+
+.nav{
+    width: 100vw;
+    border: solid 2px $background;
+    border-radius: 10px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: .4em;
+    align-items: center;
+    background-color: $primary-color;
+    
+    color: $secondary-color;
+    svg{
+        width: 40px;
+        height: 40px;
+        fill: $background;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        gap:  5px;
+    }
+    .exit{
+        fill: red;
+    }
+}

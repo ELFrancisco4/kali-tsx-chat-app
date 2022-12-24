@@ -1,0 +1,47 @@
+@import '../../../Styles/config/config';
+
+.current_user_msg{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-end;
+        animation-name: animate-msg;
+        animation-duration: 2s;
+        padding-left: 10px;
+        margin: 10px;
+        span{
+            color: #000;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        div{
+            width: 20%;
+            padding: .5em;
+            border-radius: 10px;
+            background-color: $secondary-color;
+            opacity: .6;
+        }
+    }
+
+    .different_user_msg{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        animation-name: animate-msg;
+        animation-duration: 2s;
+        justify-content: flex-start;
+        padding-left: 10px;
+        color: #fff;
+        span{
+            color: #000;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        div{
+            width: 20%;
+            padding: .5em;
+            border-radius: 10px;
+            background-color: green;
+            opacity: .6;
+        }
+    }
