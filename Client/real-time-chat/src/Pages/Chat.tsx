@@ -17,7 +17,7 @@ const Chat = () => {
   const [noOfUsers, setNoOfUsers] = useState();
   const location = useLocation();
   let socket: any;
-  const ENDPOINT: string = "localhost:5000";
+  const ENDPOINT: string = "https://kali-tsk-chat-app.herokuapp.com/";
   const ref = useRef(io(ENDPOINT));
 
   useEffect(() => {

@@ -1,8 +1,8 @@
-import dotenv from "dotenv";
-import express, { Application } from "express";
+import * as dotenv from "dotenv";
+import * as express from "express";
 import { createServer } from "http";
 import { Server } from "socket.io";
-import cors from "cors";
+import * as cors from "cors";
 
 const {
   addUser,
@@ -30,7 +30,7 @@ interface SocketData {
   room: number;
 }
 
-const app: Application = express();
+const app = express();
 const httpServer = createServer(app);
 const io: Server = new Server<
   ClientToServerEvents,
